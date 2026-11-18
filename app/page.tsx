@@ -74,10 +74,6 @@ export default async function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <header className="hero">
-        <h1>{PILLAR.h1}</h1>
-        {PILLAR.intro.length > 0 && (
-          <p className="lead">{PILLAR.intro[0]}</p>
-        )}
         <img
           src="/hero.svg"
           alt="TabooTube — video streaming illustration"
@@ -85,6 +81,10 @@ export default async function Home() {
           width={1200}
           height={630}
         />
+        <h1>{PILLAR.h1}</h1>
+        {PILLAR.intro.length > 0 && (
+          <p className="lead">{PILLAR.intro[0]}</p>
+        )}
       </header>
       {PILLAR.intro.slice(1).map((para, i) => (
         <p key={i}>{para}</p>
