@@ -14,17 +14,27 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${SITE_URL}/`,
       siteName: SITE_NAME,
       type: "website",
+      images: [
+        {
+          url: `${SITE_URL}/hero.svg`,
+          width: 1200,
+          height: 630,
+          alt: "TabooTube — video streaming illustration",
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: PILLAR.title,
       description: PILLAR.description,
+      images: [`${SITE_URL}/hero.svg`],
     },
   };
 }
 
 export default async function Home() {
   const url = `${SITE_URL}/`;
+  const heroImage = `${SITE_URL}/hero.svg`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -34,6 +44,7 @@ export default async function Home() {
         url,
         headline: PILLAR.title,
         description: PILLAR.description,
+        image: heroImage,
         datePublished: "2026-11-18",
         author: { "@type": "Organization", name: SITE_NAME, url },
         publisher: { "@type": "Organization", name: SITE_NAME, url },
@@ -62,11 +73,21 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <h1>{PILLAR.h1}</h1>
-      {PILLAR.intro.map((para, i) => (
-        <p key={i} className={i === 0 ? "lead" : undefined}>
-          {para}
-        </p>
+      <header className="hero">
+        <h1>{PILLAR.h1}</h1>
+        {PILLAR.intro.length > 0 && (
+          <p className="lead">{PILLAR.intro[0]}</p>
+        )}
+        <img
+          src="/hero.svg"
+          alt="TabooTube — video streaming illustration"
+          className="hero-img"
+          width={1200}
+          height={630}
+        />
+      </header>
+      {PILLAR.intro.slice(1).map((para, i) => (
+        <p key={i}>{para}</p>
       ))}
       {PILLAR.sections.map((s) => (
         <section className="block" key={s.heading} aria-label={s.heading}>
