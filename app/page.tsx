@@ -35,6 +35,11 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Home() {
   const url = `${SITE_URL}/`;
   const heroImage = `${SITE_URL}/hero.svg`;
+  const slug = (s: string) =>
+    s
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -91,7 +96,7 @@ export default async function Home() {
       ))}
       {PILLAR.sections.map((s) => (
         <section className="block" key={s.heading} aria-label={s.heading}>
-          <h2>{s.heading}</h2>
+          <h2 id={slug(s.heading)}>{s.heading}</h2>
           {s.paragraphs.map((para, j) => (
             <p key={j}>{para}</p>
           ))}
