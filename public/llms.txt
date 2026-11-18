@@ -1,0 +1,22 @@
+# TabooTube
+
+TabooTube is an informational guide about TabooTube: what it is, how it works, whether it is safe, and how it compares to other platforms.
+
+No videos are hosted, stored, uploaded, streamed, or distributed on this site. The content is educational and informational only.
+
+## Main pages
+
+- Home: https://www.tabootube.shop/
+- Blog: https://www.tabootube.shop/blog/
+- Privacy Policy: https://www.tabootube.shop/privacy-policy/
+- DMCA Policy: https://www.tabootube.shop/dmca-policy/
+- Disclaimer: https://www.tabootube.shop/disclaimer/
+- Contact Us: https://www.tabootube.shop/contact-us/
+
+## Blog
+
+The blog covers TabooTube guides and comparisons, including what TabooTube is, how it works, safety and legality, and comparisons with other platforms. Each post is listed on the blog index at https://www.tabootube.shop/blog/.
+
+## Contact
+
+Email: enraged.online@gmail.com
