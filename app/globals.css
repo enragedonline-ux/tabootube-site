@@ -181,7 +181,9 @@ a:hover {
 .hero-img {
   display: block;
   width: 100%;
+  max-width: 720px;
   height: auto;
+  margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 12px 32px rgba(158, 11, 36, 0.16);
 }
