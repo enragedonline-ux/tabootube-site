@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lilita_One } from "next/font/google";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 import SiteChrome from "@/components/SiteChrome";
 import "./globals.css";
@@ -7,6 +7,13 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const lilita = Lilita_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -58,7 +65,7 @@ export default function RootLayout({
     },
   };
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${lilita.variable}`}>
       <body>
         <script
           type="application/ld+json"

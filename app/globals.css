@@ -87,7 +87,8 @@ a:hover {
 }
 
 .header-inner {
-  max-width: 1120px;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 16px 20px;
   display: flex;
@@ -139,7 +140,8 @@ a:hover {
 
 /* Layout */
 .wrap {
-  max-width: 880px;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px 64px;
 }
@@ -176,9 +178,11 @@ h1 {
 }
 
 h2 {
-  font-size: 25px;
-  line-height: 1.35;
-  letter-spacing: -0.01em;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: var(--accent);
   margin: 40px 0 12px;
   padding-top: 8px;
   border-top: 1px solid var(--border);
@@ -301,7 +305,8 @@ tbody tr:nth-child(even) td {
 }
 
 .footer-inner {
-  max-width: 1120px;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 32px 20px 40px;
 }
@@ -334,10 +339,11 @@ tbody tr:nth-child(even) td {
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .wrap {
+    width: auto;
     padding: 28px 16px 48px;
   }
 
@@ -346,7 +352,12 @@ tbody tr:nth-child(even) td {
   }
 
   .header-inner {
+    width: auto;
     padding: 14px 16px;
+  }
+
+  .footer-inner {
+    width: auto;
   }
 
   .brand {
