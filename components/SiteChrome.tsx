@@ -13,52 +13,6 @@ const NAV = [
   { href: "/blog/", label: "Blog" },
 ];
 
-function FacebookIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      width="16"
-      height="16"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5z" />
-    </svg>
-  );
-}
-
-function XIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      width="15"
-      height="15"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M17.7 3H21l-7.3 8.3L22.2 21h-6.7l-5.2-6.3L4.4 21H1l7.8-8.9L1.5 3h6.9l4.7 5.7L17.7 3zm-1.2 16h1.9L6.9 4.9H4.9L16.5 19z" />
-    </svg>
-  );
-}
-
-function InstagramIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      width="16"
-      height="16"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      aria-hidden="true"
-    >
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none" />
-    </svg>
-  );
-}
-
 function SearchIcon() {
   return (
     <svg
@@ -89,19 +43,19 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
   return (
     <>
       <div className="topbar">
-        <div className="topbar-inner">
-          <span className="topbar-text">TabooTube Official ✅</span>
-          <span className="topbar-social">
-            <a href="#" aria-label="TabooTube on Facebook">
-              <FacebookIcon />
-            </a>
-            <a href="#" aria-label="TabooTube on X">
-              <XIcon />
-            </a>
-            <a href="#" aria-label="TabooTube on Instagram">
-              <InstagramIcon />
-            </a>
-          </span>
+        <div className="marquee" aria-label="About this site">
+          <div className="marquee-track">
+            <span>
+              TabooTube is an independent informational website — not
+              affiliated with any video platform. All content is for
+              information and education only.&nbsp;&nbsp;•&nbsp;&nbsp;
+            </span>
+            <span aria-hidden="true">
+              TabooTube is an independent informational website — not
+              affiliated with any video platform. All content is for
+              information and education only.&nbsp;&nbsp;•&nbsp;&nbsp;
+            </span>
+          </div>
         </div>
       </div>
       <header className="header">

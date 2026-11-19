@@ -45,39 +45,28 @@ a:hover {
   color: #ffffff;
 }
 
-.topbar-inner {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 8px 20px;
-  position: relative;
-  text-align: center;
+/* Scrolling marquee */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
 }
 
-.topbar-text {
+.marquee-track {
+  display: inline-block;
   font-size: 14px;
   font-weight: 650;
   letter-spacing: 0.01em;
+  animation: marquee-scroll 32s linear infinite;
 }
 
-.topbar-social {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.topbar-social a {
-  color: #ffffff;
-  display: inline-flex;
-  line-height: 0;
-}
-
-.topbar-social a:hover {
-  color: #ffd9de;
-  text-decoration: none;
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* Header */
@@ -389,9 +378,5 @@ tbody tr:nth-child(even) td {
 
   .brand {
     font-size: 28px;
-  }
-
-  .topbar-social {
-    display: none;
   }
 }
