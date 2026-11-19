@@ -14,6 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = POST_BY_SLUG.get(slug);
   if (!p) return { title: "TabooTube Blog" };
   const url = `${SITE_URL}/blog/${p.slug}/`;
+  const imageUrl = p.image ? `${SITE_URL}${p.image.src}` : `${SITE_URL}/hero.svg`;
+  const imageAlt = p.image?.alt ?? "TabooTube — video streaming illustration";
+  const imageWidth = p.image ? 800 : 1200;
+  const imageHeight = p.image ? 480 : 630;
   return {
     title: p.title,
     description: p.description,
@@ -24,11 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       siteName: SITE_NAME,
       type: "article",
+      images: [{ url: imageUrl, width: imageWidth, height: imageHeight, alt: imageAlt }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: p.title,
       description: p.description,
+      images: [imageUrl],
     },
   };
 }
@@ -39,7 +45,8 @@ export default async function BlogPost({ params }: Props) {
   if (!p) notFound();
   const url = `${SITE_URL}/blog/${p.slug}/`;
   const firstPara = p.sections[0]?.paragraphs[0] ?? p.excerpt;
-  const related = POSTS.filter((o) => o.slug !== p.slug).slice(0, 3);
+  const idx = POSTS.findIndex((o) => o.slug === p.slug);
+  const related = [1, 2, 3].map((n) => POSTS[(idx + n) % POSTS.length]);
   const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@graph": [
@@ -88,6 +95,18 @@ export default async function BlogPost({ params }: Props) {
       <p>
         <strong>{firstPara}</strong>
       </p>
+      {p.image && (
+        <figure className="post-img">
+          <img
+            src={p.image.src}
+            alt={p.image.alt}
+            width="800"
+            height="480"
+            loading="lazy"
+          />
+          {p.image.caption && <figcaption>{p.image.caption}</figcaption>}
+        </figure>
+      )}
       {p.sections.map((s, i) => (
         <section className="block" key={s.heading} aria-label={s.heading}>
           <h2>{s.heading}</h2>

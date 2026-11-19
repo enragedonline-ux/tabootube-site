@@ -177,6 +177,28 @@ a:hover {
   box-shadow: 0 12px 32px rgba(158, 11, 36, 0.16);
 }
 
+/* Blog post image */
+.post-img {
+  margin: 0 0 28px;
+}
+
+.post-img img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(158, 11, 36, 0.16);
+}
+
+.post-img figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+
 /* Typography */
 h1 {
   font-size: 34px;

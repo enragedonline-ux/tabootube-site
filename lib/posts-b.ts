@@ -1,6 +1,6 @@
 export type Section = { heading: string; paragraphs: string[]; bullets?: string[]; table?: { headers: string[]; rows: string[][] } };
 export type Faq = { q: string; a: string };
-export type Post = { slug: string; title: string; description: string; date: string; dateLabel: string; excerpt: string; sources: { label: string; url: string }[]; sections: Section[]; faqs?: Faq[] };
+export type Post = { slug: string; title: string; description: string; date: string; dateLabel: string; excerpt: string; sources: { label: string; url: string }[]; sections: Section[]; faqs?: Faq[]; image?: { src: string; alt: string; caption?: string } };
 
 export const POSTS_B: Post[] = [
   {
@@ -139,6 +139,13 @@ export const POSTS_B: Post[] = [
           "Accountability and moderation are typically thinner than on mainstream platforms."
         ]
       }
+    ],
+    faqs: [
+      { q: "Do I need an account to watch videos on TabooTube?", a: "No. Watching is generally optional: the homepage, categories, search and playback are all available to anonymous visitors. An account only becomes relevant for favourites, playlists, watch history, comments or uploading." },
+      { q: "How do I find videos on TabooTube?", a: "Through three routes: browsing categories, using search, and following related videos. Categories divide the catalogue into broad groups, search matches titles and descriptions, and the related-videos rail suggests similar videos after each one ends." },
+      { q: "Can I upload videos to TabooTube?", a: "Uploading usually requires an account, and the process asks for a title, a category and tags. Some sites review uploads before they appear publicly, while others publish immediately and review later. The quality of moderation varies enormously." },
+      { q: "Is there an official TabooTube mobile app?", a: "No. There is usually no official app, because the major app stores do not allow adult video apps. Mobile use happens through the browser, and any app claiming to be the official TabooTube app should be treated with suspicion." },
+      { q: "Is TabooTube different on mobile and desktop?", a: "On desktop you get a wide thumbnail grid, a sidebar and a large player. On mobile everything compresses into a single column, menus hide behind icons, and small screens make it harder to tell a real button from an advert, so a misplaced tap can open a pop-up more easily." }
     ]
   },
   {
@@ -196,6 +203,13 @@ export const POSTS_B: Post[] = [
           "The honest answer to what sustains the platform's popularity is therefore a mix of factors rather than a single secret. Unmet demand brings people in, simple access keeps the barrier low, niche communities spread the word, and reliable operation keeps people coming back. Remove any one of those, and the popularity would fade. Keep them all in place, and a small alternative platform can hold a steady audience for a long time without ever becoming a mainstream name."
         ]
       }
+    ],
+    faqs: [
+      { q: "Why did TabooTube become popular?", a: "It serves an audience mainstream platforms do not: the largest video platforms prohibit adult content, leaving a large audience with no home on the services they use every day. Easy access, niche communities and curiosity did the rest." },
+      { q: "How do people discover TabooTube?", a: "Mainly through search engines and word of mouth. Someone searches a question or phrase, finds the site in the results, and clicks through. Recommendations in forums, chat groups and social media carry even more weight than search results." },
+      { q: "What role do creators play in TabooTube's popularity?", a: "Creators who work in adult or borderline categories face demonetisation, hiding or removal on mainstream platforms. An alternative platform offers them a place where their work is allowed to exist at all, and niche communities then spread the word." },
+      { q: "Is TabooTube's popularity sustainable?", a: "Popularity that lasts is sustained by simple things: the site keeps working, loads reliably, and keeps adding fresh content. But growth built on search and word of mouth is fragile, and it can fade quickly if rankings or reputation change." },
+      { q: "Does TabooTube rely on advertising to grow?", a: "No. It does not need a large marketing budget, because its users promote it by word of mouth: they share links in forums, mention it in conversations, and recommend it to people with the same interests." }
     ]
   },
   {
@@ -334,5 +348,86 @@ export const POSTS_B: Post[] = [
       { q: "Do I need an account to watch videos?", a: "No. Watching videos on most similar platforms works without registration. An account is only needed for optional features such as favourites, history, or uploading." },
       { q: "Is TabooTube safe?", a: "It carries the usual risks of free adult sites, mainly from aggressive advertising, misleading buttons, and fake download prompts. Keep your browser updated, avoid installing anything the site pushes at you, and never share personal or payment information with it." }
     ]
+  },
+  {
+    slug: "tabootube-in-2027-whats-new-is-it-safe",
+    title: "TabooTube in 2027: What's New, Is It Still Safe?",
+    description: "TabooTube in 2027: what to expect, what may change, and whether it is still safe — a forward-looking guide with practical safety steps.",
+    date: "2026-11-19",
+    dateLabel: "19 Nov 2026",
+    excerpt: "A forward-looking guide to TabooTube in 2027: what to expect, what may change, and how to stay safe.",
+    sources: [
+      { label: "Electronic Frontier Foundation", url: "https://www.eff.org/" },
+      { label: "Internet Watch Foundation", url: "https://www.iwf.org.uk/" }
+    ],
+    sections: [
+      {
+        heading: "TabooTube in 2027: What to Expect",
+        paragraphs: [
+          "TabooTube in 2027 is best understood as a continuation, not a new chapter. Nothing about the platform suggests a sudden transformation: it remains a niche, user-generated video site that exists because mainstream platforms prohibit the content it hosts. What will change in 2027 is not the idea of the platform, but the environment around it — stricter rules on mainstream services, better browser protections, and more awareness of the risks that come with free adult sites. This guide looks ahead honestly: it separates what is reasonable to expect from what nobody can know yet.",
+          "The core of the platform is unlikely to move. Visitors will still find a simple layout: a grid of thumbnails, categories, search, and a player that works in the browser without an account. That simplicity is the product. Mainstream platforms compete on features, recommendations, and creator tools; alternative platforms compete on access. As long as the largest services keep adult content out, there will be an audience for a site that lets it in.",
+          "What does change is the pressure around that core. Mainstream moderation keeps tightening, which pushes more content and more creators outside it. Browsers keep improving their warnings and protections. And users keep getting better at spotting the traps — misleading buttons, fake download prompts, and copycat sites. The platform itself may stay the same while the world around it keeps moving."
+        ]
+      },
+      {
+        heading: "What May Change in 2027",
+        paragraphs: [
+          "Several shifts are reasonable to expect in 2027, even if no one can promise them. The first is more lookalikes. Whenever a name becomes well known, copies appear — sites that use the same name, a similar design, or a near-identical address. Some are harmless mirrors; others exist to serve ads or unwanted software. Expecting more of them is realistic, and it makes verifying the site you are on more important than ever.",
+          "The second is stronger browser and search protections. Browsers already warn about deceptive sites, and those warnings are likely to get better. Search engines are also getting stricter about the sites they surface for sensitive queries. That is good for users in the long run, but it also means the sites that do appear in results may change, and a familiar address may not be the one you expect.",
+          "The third is artificial intelligence. AI-generated video and AI-written descriptions are becoming cheaper to produce, and they will reach alternative platforms as well. That could mean more content, but also more content of uncertain origin — videos that may not show real people, or may have been made without anyone's consent. The safety advice does not change because of AI, but the reasons for it get stronger."
+        ],
+        bullets: [
+          "More mirrors and lookalike sites using the same name.",
+          "Stronger browser warnings and stricter search results for sensitive queries.",
+          "More AI-generated content of uncertain origin.",
+          "Tighter mainstream moderation pushing more creators and viewers toward alternatives."
+        ]
+      },
+      {
+        heading: "Is TabooTube Still Safe in 2027?",
+        paragraphs: [
+          "Safety in 2027 will depend on the same factors as safety in 2026, because the risks have not changed. The videos themselves are rarely the problem. The risk comes from everything around them: aggressive advertising, misleading buttons, pop-ups, fake download prompts, and the simple fact that nobody can verify from the outside how carefully a site checks its uploads.",
+          "The honest answer is that no free adult platform is safe by default. Safety is not a property of the site; it is the result of how you use it. A careful visitor with updated software, an ad blocker, and a habit of never downloading anything a video site pushes at them is far safer than a careless visitor on the same site. The platform does not protect you. Your habits do.",
+          "The most serious risk remains non-consensual content. Not every video on an alternative platform was uploaded with the consent of the people in it, and that has not changed. If you have reason to think a video was uploaded without consent, do not watch or share it. Content involving minors is illegal everywhere and should be reported, not viewed."
+        ]
+      },
+      {
+        heading: "Safety Steps That Still Matter in 2027",
+        paragraphs: [
+          "The safety steps for 2027 are the same ones that worked in 2026, because the threats are the same. Keep your browser and operating system updated. Consider a reputable ad blocker. Never install software that a video site tells you to download — a real video site plays video in the browser and does not need a codec or a player. Close any page that insists otherwise.",
+          "Protect your identity. Use a separate email address that is not tied to your real name or your main accounts, and choose a password you do not use anywhere else. Never provide payment information, a phone number, or identity documents. On most video platforms, none of those are needed at all, and a site that asks for them is a site to leave."
+        ],
+        bullets: [
+          "Keep your browser and operating system updated.",
+          "Use a reputable ad blocker and private browsing.",
+          "Never install software a video site tells you to download.",
+          "Use a separate email and a unique password; never share payment or identity details.",
+          "Do not watch or share videos you suspect were uploaded without consent — report them instead."
+        ]
+      },
+      {
+        heading: "Alternatives to Consider in 2027",
+        paragraphs: [
+          "For general video, the best alternatives remain the mainstream platforms. YouTube and Vimeo host enormous libraries of legal, moderated video across every topic, with proper safety tools, age controls, and reporting systems. They do not host adult content, which is why people look elsewhere, but for most video needs they are the better choice by a wide margin.",
+          "For adult content, the safer options tend to be established, paid services with clear ownership, published policies, and verified contributors. Paying does not guarantee safety, but a service that verifies its content and answers for its policies is generally more accountable than an anonymous free site.",
+          "It is also worth asking whether you need an alternative at all. Many people arrive at a site like TabooTube out of curiosity rather than a specific need, and for them the mainstream platforms already cover everything they actually want to watch. If that is your situation, the simplest and safest choice is to stay with the services you already trust."
+        ]
+      },
+      {
+        heading: "The Bottom Line",
+        paragraphs: [
+          "TabooTube in 2027 will most likely look a lot like TabooTube in 2026: the same simple platform, in a stricter environment, with the same risks and the same need for caution. Expect continuity, not revolution. Expect more lookalikes, better browser warnings, and more AI-generated content — and expect the safety steps to matter just as much as they always have.",
+          "The decision is yours, and it is better made with clear information than with guesswork. If you use the platform, use it carefully. If you decide it is not worth the risk, the mainstream services and the established paid alternatives are there, with far stronger safety nets. Either way, nothing in 2027 changes the basic rule: the site does not protect you — your habits do."
+        ]
+      }
+    ],
+    faqs: [
+      { q: "Will TabooTube still exist in 2027?", a: "There is no single official TabooTube site, so the name is likely to keep appearing through different mirrors and lookalikes. What matters is not whether the name survives, but whether any site using it is safe to use — and that depends on the checks in this guide." },
+      { q: "Is TabooTube safe to use in 2027?", a: "The risks are the same as in 2026: mirrors, aggressive advertising, malware, privacy, and non-consensual uploads. Safety depends on your habits — updated software, an ad blocker, a separate email, and never downloading anything a video site pushes at you." },
+      { q: "What is new about TabooTube in 2027?", a: "No specific 2027 changes have been announced. The honest outlook is continuity: the same kind of platform, in a stricter environment — tighter mainstream rules, better browser protections, and more awareness of the risks." },
+      { q: "Will there be an official TabooTube app in 2027?", a: "Unlikely. Major app stores do not allow adult video apps, so mobile use will remain browser-based. Any app claiming to be the official TabooTube app should be treated with suspicion." },
+      { q: "Where can I learn more about staying safe?", a: "This site's own guides cover the risks and alternatives in detail: the safety guide, the how-it-works guide, and the comparison posts. For general online privacy and safety, the Electronic Frontier Foundation and the Internet Watch Foundation are reliable starting points." }
+    ],
+    image: { src: "/blog/tabootube-2027-outlook.svg", alt: "TabooTube in 2027 outlook — what's new and is it still safe", caption: "TabooTube in 2027: an outlook on what may change and what stays the same." }
   }
 ];

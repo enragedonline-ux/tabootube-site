@@ -1,6 +1,6 @@
 export type Section = { heading: string; paragraphs: string[]; bullets?: string[]; table?: { headers: string[]; rows: string[][] } };
 export type Faq = { q: string; a: string };
-export type Post = { slug: string; title: string; description: string; date: string; dateLabel: string; excerpt: string; sources: { label: string; url: string }[]; sections: Section[]; faqs?: Faq[] };
+export type Post = { slug: string; title: string; description: string; date: string; dateLabel: string; excerpt: string; sources: { label: string; url: string }[]; sections: Section[]; faqs?: Faq[]; image?: { src: string; alt: string; caption?: string } };
 
 export const POSTS_A: Post[] = [
   {

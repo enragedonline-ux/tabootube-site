@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+  <rect width="800" height="480" fill="#FAF8F2"/>
+  <rect x="0" y="0" width="800" height="6" fill="#C8102E"/>
+  <text x="400" y="72" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="bold" fill="#C8102E">TabooTube in 2027</text>
+  <text x="400" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#5C5C5C">What&#x27;s New &#183; Is It Still Safe?</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="36" y="150" width="232" height="210" rx="14" fill="#FDF2F4" stroke="#F3D4DA" stroke-width="1.5"/>
+    <rect x="36" y="150" width="232" height="8" rx="4" fill="#C8102E"/>
+    <text x="152" y="200" text-anchor="middle" font-size="22" font-weight="bold" fill="#C8102E">What&#x27;s New</text>
+    <text x="152" y="238" text-anchor="middle" font-size="15" fill="#1A1A1A">A 2027 outlook on the</text>
+    <text x="152" y="262" text-anchor="middle" font-size="15" fill="#1A1A1A">platform and what</text>
+    <text x="152" y="286" text-anchor="middle" font-size="15" fill="#1A1A1A">may change</text>
+    <text x="152" y="324" text-anchor="middle" font-size="13" fill="#5C5C5C">Mirrors &#183; AI content</text>
+    <rect x="284" y="150" width="232" height="210" rx="14" fill="#EAF6F5" stroke="#BFE3DF" stroke-width="1.5"/>
+    <rect x="284" y="150" width="232" height="8" rx="4" fill="#0F5F5C"/>
+    <text x="400" y="200" text-anchor="middle" font-size="22" font-weight="bold" fill="#0F5F5C">Is It Safe?</text>
+    <text x="400" y="238" text-anchor="middle" font-size="15" fill="#1A1A1A">The risks that persist</text>
+    <text x="400" y="262" text-anchor="middle" font-size="15" fill="#1A1A1A">and the safety steps</text>
+    <text x="400" y="286" text-anchor="middle" font-size="15" fill="#1A1A1A">that still matter</text>
+    <text x="400" y="324" text-anchor="middle" font-size="13" fill="#5C5C5C">Ads &#183; Privacy &#183; Consent</text>
+    <rect x="532" y="150" width="232" height="210" rx="14" fill="#FDF6E3" stroke="#EAD9A8" stroke-width="1.5"/>
+    <rect x="532" y="150" width="232" height="8" rx="4" fill="#8A6D00"/>
+    <text x="648" y="200" text-anchor="middle" font-size="22" font-weight="bold" fill="#8A6D00">Safer Choices</text>
+    <text x="648" y="238" text-anchor="middle" font-size="15" fill="#1A1A1A">Alternatives and</text>
+    <text x="648" y="262" text-anchor="middle" font-size="15" fill="#1A1A1A">practical advice</text>
+    <text x="648" y="286" text-anchor="middle" font-size="15" fill="#1A1A1A">for 2027</text>
+    <text x="648" y="324" text-anchor="middle" font-size="13" fill="#5C5C5C">Mainstream &#183; Paid services</text>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5C5C5C">TabooTube &#8212; Informational guide &#183; No videos hosted</text>
+  <text x="400" y="448" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#9A9A9A">tabootube.shop</text>
+</svg>

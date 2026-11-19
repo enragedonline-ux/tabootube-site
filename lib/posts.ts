@@ -17,6 +17,7 @@ export type Post = {
   sources: { label: string; url: string }[];
   sections: Section[];
   faqs?: Faq[];
+  image?: { src: string; alt: string; caption?: string };
 };
 
 import { POSTS_A } from "./posts-a";
