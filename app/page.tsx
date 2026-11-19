@@ -87,13 +87,15 @@ export default async function Home() {
           height={630}
         />
         <h1>{PILLAR.h1}</h1>
+      </header>
+      <div className="intro-container">
         {PILLAR.intro.length > 0 && (
           <p className="lead">{PILLAR.intro[0]}</p>
         )}
-      </header>
-      {PILLAR.intro.slice(1).map((para, i) => (
-        <p key={i}>{para}</p>
-      ))}
+        {PILLAR.intro.slice(1).map((para, i) => (
+          <p key={i}>{para}</p>
+        ))}
+      </div>
       {PILLAR.sections.map((s) => (
         <section className="block" key={s.heading} aria-label={s.heading}>
           <h2 id={slug(s.heading)}>{s.heading}</h2>

@@ -153,12 +153,29 @@ a:hover {
 }
 
 .hero h1 {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  background: linear-gradient(90deg, #c8102e 0%, #f43f5e 50%, #9e0b24 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin: 24px 0 12px;
 }
 
-.hero .lead {
-  max-width: 640px;
-  margin: 0 auto;
+/* Full-width intro container */
+.intro-container {
+  width: 100%;
+  background: var(--accent-soft);
+  border: 1px solid #f3d4da;
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin: 0 0 32px;
+}
+
+.intro-container p:last-child {
+  margin-bottom: 0;
 }
 
 .hero-img {
@@ -349,6 +366,14 @@ tbody tr:nth-child(even) td {
 
   .hero {
     margin: 0 0 32px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .intro-container {
+    padding: 20px;
   }
 
   .header-inner {
