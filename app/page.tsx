@@ -7,6 +7,15 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: PILLAR.title,
     description: PILLAR.description,
+    keywords: [
+      "tabootube",
+      "taboo tube",
+      "is tabootube safe",
+      "tabootube download",
+      "what is tabootube",
+      "how tabootube works",
+      "tabootube alternatives",
+    ],
     alternates: { canonical: `${SITE_URL}/` },
     openGraph: {
       title: PILLAR.title,

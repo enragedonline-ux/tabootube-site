@@ -17,13 +17,23 @@ const lilita = Lilita_One({
   display: "swap",
 });
 
-const TITLE = "TabooTube – What It Is, How It Works, Is It Safe? [2026 Guide]";
+const TITLE = "TabooTube – What Is TabooTube? Is It Safe? How It Works [2026 Guide]";
 const DESCRIPTION =
-  "TabooTube explained: what it is, how it works, whether it is safe, and how it compares to other platforms. An independent informational guide — no videos are hosted on this site.";
+  "What is TabooTube? Is TabooTube safe? Learn how TabooTube works, how to use it, and how it compares to RedTube, EroMe, Tube8 and HCLips. Independent informational guide — no videos hosted.";
+const KEYWORDS = [
+  "tabootube",
+  "taboo tube",
+  "is tabootube safe",
+  "tabootube download",
+  "what is tabootube",
+  "how tabootube works",
+  "tabootube alternatives",
+];
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
+  keywords: KEYWORDS,
   metadataBase: new URL(SITE_URL),
   robots: { index: true, follow: true },
   alternates: { canonical: `${SITE_URL}/` },
