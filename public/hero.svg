@@ -1,53 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="TabooTube — video streaming illustration">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="TabooTube video streaming illustration">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#D21F3C"/>
-      <stop offset="0.55" stop-color="#B3122E"/>
-      <stop offset="1" stop-color="#8E0A20"/>
+    <radialGradient id="bgGlowTR" cx="85%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#FDF2F4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bgGlowBL" cx="8%" cy="95%" r="50%">
+      <stop offset="0%" stop-color="#FDF2F4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B1B2E"/>
+      <stop offset="55%" stop-color="#2A2A4A"/>
+      <stop offset="100%" stop-color="#141428"/>
     </linearGradient>
-    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.14"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+    <linearGradient id="screenArt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C8102E"/>
+      <stop offset="55%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="thumbRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C8102E"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+    <linearGradient id="thumbBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="thumbTeal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="redBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C8102E"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <rect width="1200" height="630" fill="url(#bgGlowTR)"/>
+  <rect width="1200" height="630" fill="url(#bgGlowBL)"/>
 
-  <!-- Soft decorative rings -->
-  <circle cx="600" cy="300" r="260" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1.5"/>
-  <circle cx="600" cy="300" r="330" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="1.5"/>
-  <circle cx="600" cy="300" r="400" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1.5"/>
+  <!-- Decorative rings -->
+  <circle cx="1020" cy="90" r="70" fill="none" stroke="#F3D4DA" stroke-width="2"/>
+  <circle cx="1020" cy="90" r="46" fill="none" stroke="#F3D4DA" stroke-width="2"/>
+  <circle cx="120" cy="540" r="56" fill="none" stroke="#F3D4DA" stroke-width="2"/>
+  <circle cx="120" cy="540" r="34" fill="none" stroke="#F3D4DA" stroke-width="2"/>
+  <circle cx="180" cy="110" r="10" fill="#F3D4DA"/>
+  <circle cx="1060" cy="500" r="12" fill="#F3D4DA"/>
 
-  <!-- Floating video cards (left / right) -->
-  <g opacity="0.16">
-    <rect x="120" y="150" width="170" height="110" rx="14" fill="#ffffff"/>
-    <rect x="140" y="172" width="130" height="8" rx="4" fill="#8E0A20"/>
-    <rect x="140" y="190" width="90" height="8" rx="4" fill="#8E0A20"/>
-    <rect x="910" y="380" width="170" height="110" rx="14" fill="#ffffff"/>
-    <rect x="930" y="402" width="130" height="8" rx="4" fill="#8E0A20"/>
-    <rect x="930" y="420" width="90" height="8" rx="4" fill="#8E0A20"/>
-  </g>
-  <g opacity="0.10">
-    <rect x="180" y="420" width="120" height="80" rx="12" fill="#ffffff"/>
-    <rect x="900" y="140" width="120" height="80" rx="12" fill="#ffffff"/>
-  </g>
-
-  <!-- Central player card -->
-  <rect x="380" y="130" width="440" height="300" rx="24" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/>
-
+  <!-- Main player card shadow -->
+  <rect x="308" y="76" width="584" height="330" rx="22" fill="#000000" opacity="0.08"/>
+  <!-- Main player card -->
+  <rect x="300" y="66" width="584" height="330" rx="22" fill="url(#screenGrad)"/>
+  <!-- Abstract video art on screen -->
+  <circle cx="420" cy="160" r="90" fill="url(#screenArt)" opacity="0.55"/>
+  <circle cx="760" cy="300" r="110" fill="url(#screenArt)" opacity="0.35"/>
+  <circle cx="660" cy="120" r="46" fill="#FFFFFF" opacity="0.08"/>
+  <!-- Now Playing pill -->
+  <rect x="326" y="88" width="118" height="30" rx="15" fill="#C8102E"/>
+  <circle cx="344" cy="103" r="4" fill="#FFFFFF"/>
+  <text x="356" y="107" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Now Playing</text>
+  <!-- Duration -->
+  <rect x="796" y="88" width="62" height="30" rx="15" fill="#000000" opacity="0.45"/>
+  <text x="827" y="107" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">3:12</text>
   <!-- Play button -->
-  <circle cx="600" cy="280" r="72" fill="#ffffff"/>
-  <path d="M574 240 L574 320 L646 280 Z" fill="#B3122E"/>
+  <circle cx="592" cy="231" r="52" fill="#C8102E"/>
+  <circle cx="592" cy="231" r="52" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
+  <path d="M574 205 L618 231 L574 257 Z" fill="#FFFFFF"/>
+  <!-- Progress bar -->
+  <rect x="326" y="362" width="532" height="6" rx="3" fill="#FFFFFF" opacity="0.25"/>
+  <rect x="326" y="362" width="210" height="6" rx="3" fill="url(#redBar)"/>
+  <circle cx="536" cy="365" r="8" fill="#FFFFFF"/>
+  <circle cx="536" cy="365" r="4" fill="#C8102E"/>
 
-  <!-- Player progress bar -->
-  <rect x="410" y="392" width="380" height="8" rx="4" fill="#ffffff" opacity="0.35"/>
-  <rect x="410" y="392" width="230" height="8" rx="4" fill="#ffffff"/>
-  <circle cx="640" cy="396" r="10" fill="#ffffff"/>
+  <!-- HD badge -->
+  <g>
+    <rect x="872" y="44" width="52" height="28" rx="8" fill="#FFFFFF" stroke="#F3D4DA" stroke-width="1.5"/>
+    <text x="898" y="63" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" fill="#C8102E" text-anchor="middle">HD</text>
+  </g>
 
-  <!-- Bottom caption dots -->
-  <circle cx="560" cy="520" r="7" fill="#ffffff" opacity="0.9"/>
-  <circle cx="590" cy="520" r="7" fill="#ffffff" opacity="0.55"/>
-  <circle cx="620" cy="520" r="7" fill="#ffffff" opacity="0.55"/>
-  <circle cx="650" cy="520" r="7" fill="#ffffff" opacity="0.55"/>
+  <!-- Featured thumbnails -->
+  <g>
+    <rect x="300" y="428" width="184" height="104" rx="12" fill="url(#thumbRed)"/>
+    <circle cx="392" cy="480" r="20" fill="#000000" opacity="0.35"/>
+    <path d="M386 470 L402 480 L386 490 Z" fill="#FFFFFF"/>
+    <rect x="300" y="544" width="130" height="10" rx="5" fill="#1A1A1A"/>
+    <rect x="300" y="562" width="86" height="8" rx="4" fill="#9CA3AF"/>
+  </g>
+  <g>
+    <rect x="508" y="428" width="184" height="104" rx="12" fill="url(#thumbBlue)"/>
+    <circle cx="600" cy="480" r="20" fill="#000000" opacity="0.35"/>
+    <path d="M594 470 L610 480 L594 490 Z" fill="#FFFFFF"/>
+    <rect x="508" y="544" width="140" height="10" rx="5" fill="#1A1A1A"/>
+    <rect x="508" y="562" width="92" height="8" rx="4" fill="#9CA3AF"/>
+  </g>
+  <g>
+    <rect x="716" y="428" width="184" height="104" rx="12" fill="url(#thumbTeal)"/>
+    <circle cx="808" cy="480" r="20" fill="#000000" opacity="0.35"/>
+    <path d="M802 470 L818 480 L802 490 Z" fill="#FFFFFF"/>
+    <rect x="716" y="544" width="124" height="10" rx="5" fill="#1A1A1A"/>
+    <rect x="716" y="562" width="80" height="8" rx="4" fill="#9CA3AF"/>
+  </g>
+
+  <!-- Like chip -->
+  <g>
+    <rect x="300" y="596" width="150" height="26" rx="13" fill="#FFFFFF" stroke="#F3D4DA" stroke-width="1.5"/>
+    <path d="M318 609 c-3-4-8-6-8-10 0-3 2-5 5-5 2 0 3 1 4 2 1-1 2-2 4-2 3 0 5 2 5 5 0 4-5 6-8 10z" fill="#C8102E"/>
+    <text x="336" y="613" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A">Curated &amp; Safe</text>
+  </g>
+  <!-- Ad-free chip -->
+  <g>
+    <rect x="462" y="596" width="110" height="26" rx="13" fill="#FFFFFF" stroke="#F3D4DA" stroke-width="1.5"/>
+    <circle cx="478" cy="609" r="7" fill="#C8102E"/>
+    <path d="M474 609 l3 3 5-6" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="492" y="613" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1A1A1A">Ad-Free</text>
+  </g>
 </svg>
