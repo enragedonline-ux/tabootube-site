@@ -4,7 +4,7 @@ export type Pillar = { title: string; description: string; h1: string; intro: st
 
 export const PILLAR: Pillar = {
   title: "TabooTube – What Is TabooTube? Is It Safe? How It Works [2026 Guide]",
-  description: "What is TabooTube? Is TabooTube safe? Learn how TabooTube works, how to use it, and how it compares to RedTube, EroMe, Tube8 and HCLips. Independent informational guide — no videos hosted.",
+  description: "What is TabooTube? Is it safe? How it works, how to use it, and how it compares to RedTube, EroMe, Tube8 and HCLips. Info guide — no videos hosted.",
   h1: "TabooTube",
   intro: [
     "TabooTube is a name that has been appearing more and more often in search results, forums, and social media discussions about alternative video platforms. It is generally described as a niche, user-generated video platform that sits outside the world of mainstream services such as YouTube and Vimeo, offering content that would rarely survive the strict moderation rules of larger sites. Because the name is used by several different websites, mirrors, and lookalike pages, it is also a source of genuine confusion, and many people who search for it are not entirely sure what they are looking for, or what they will find when they arrive.",

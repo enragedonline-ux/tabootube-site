@@ -19,7 +19,7 @@ const lilita = Lilita_One({
 
 const TITLE = "TabooTube – What Is TabooTube? Is It Safe? How It Works [2026 Guide]";
 const DESCRIPTION =
-  "What is TabooTube? Is TabooTube safe? Learn how TabooTube works, how to use it, and how it compares to RedTube, EroMe, Tube8 and HCLips. Independent informational guide — no videos hosted.";
+  "What is TabooTube? Is it safe? How it works, how to use it, and how it compares to RedTube, EroMe, Tube8 and HCLips. Info guide — no videos hosted.";
 const KEYWORDS = [
   "tabootube",
   "taboo tube",
