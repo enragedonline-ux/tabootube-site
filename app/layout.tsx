@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Lilita_One } from "next/font/google";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 import SiteChrome from "@/components/SiteChrome";
+import PopupBanner from "@/components/PopupBanner";
 import "./globals.css";
 
 const inter = Inter({
@@ -82,6 +83,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <SiteChrome>{children}</SiteChrome>
+        <PopupBanner />
       </body>
     </html>
   );
